@@ -27,7 +27,7 @@ const tileCurve = (ctx, columnPosition, rowPosition, height, color) => {
   ctx.quadraticCurveTo(columnPosition + halfHeight, rowPosition -height,
                        columnPosition + height, rowPosition);
   ctx.lineTo(columnPosition + halfHeight, rowPosition + halfHeight);
-  ctx.quadraticCurveTo(columnPosition, rowPosition - 18,
+  ctx.quadraticCurveTo(columnPosition, rowPosition - 10,
      columnPosition - halfHeight, rowPosition - halfHeight);
   ctx.closePath();
   ctx.fillStyle = color;
@@ -74,7 +74,7 @@ const tileReflectiveCurve = (ctx, columnPosition, rowPosition, height, color) =>
 //   const b = 120;
 const canvas = document.getElementById("herringbone");
 canvas.height = 1600;
-canvas.width = 250;
+canvas.width = 2000;
 const ctx = canvas.getContext("2d");
 const h = 50 * Math.sqrt(2);
 const w = h * 2;
